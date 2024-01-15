@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <STYLE>
+        /* ELEMENT SELECTOR */
+        div{
+            /* color:black; */
+            /* background-color: magenta; */
+        }
+
+        /* CLASS SELECTOR */
+        .RED{
+            background-color: red;
+        }
+
+        /* ID SELECTOR */
+        #GREEN{
+            background-color: GREEN;
+        }
+
+        /* CHILD SELECTORS */
+        DIV > P {
+            color: yellow;
+            background-color:brown;
+        }
+
+        /* DESCENDANT SELECTORS */
+        DIV P{
+            color: yellow;
+            background-color: BROWN;
+        }
+
+        /* UNIVERSAL SELECTORS */
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        /* PSEUDO SELECTORS */
+        a:visited{
+            color: yellow;
+        }
+
+        a:link {
+            color:green;
+            background-color:black;
+        }
+
+        a:active {
+            background-color: red;
+        }
+
+        a:hover {
+            background-color: magenta;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+    </STYLE>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+    <div class="red">
+        i am a div
+        <article>
+
+            <p>I am a para inside div</p>
+        
+        </article>
+    </div>
+    <DIV>
+        HIII I'M ADINATH, i'm here to write a code of CSS
+    </DIV>
+    <a href="https://www.google.com" target="_blank"><img src="dp.jpg" height="100" alt="google"></a>
+    <br><br>
+    <a href="https://www.facebook.com">GO to Facebook</a>
+
+</body>
+</html>
