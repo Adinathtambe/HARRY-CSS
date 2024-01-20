@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css float and clear</title>
+    <style>
+      .cards {
+        border: 2px solid black;
+        display: flow-root;
+      }
+      img {
+        float: right;
+      }
+      .card {
+        border: 2px solid red;
+      }
+      .card:nth-child(3){
+        background-color: aqua;
+        clear: both;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <cards>
+      <div class="cards">
+        <img
+          width="344px"
+          src="https://tse1.mm.bing.net/th?id=OIP.avb9nDfw3kq7NOoP0grM4wHaEK&pid=Api&rs=1&c=1&qlt=95&w=218&h=122"
+          alt="nature image"
+        />
+        <div class="card">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          illum tempora, soluta commodi maiores voluptatem quae fuga nihil quia,
+          perferendis magni! Iste, maiores?
+        </div>
+        <div class="card">card 2</div>
+        <div class="card">card 3</div>
+      </div>
+    </cards>
+  </body>
+</html>
